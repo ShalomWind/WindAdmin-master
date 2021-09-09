@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <Environment>
+
+    <PlatformName>Mobile</PlatformName>
+
+        <!--TimeOut-->
+
+            <TimeOut>5</TimeOut>
+
+        <!--Credentials-->
+
+            <user>shalom.perez</user>
+            <password>123456</password>
+
+
+        <!--Mobile-->
+
+            <UDID>R39M3063NBE</UDID>
+            <APP_PACKAGE>com.wind.admin</APP_PACKAGE>
+            <APP_ACTIVITY>.user.activity.LoginActivity</APP_ACTIVITY>
+            <Url_AppiumServer>http://localhost:4723</Url_AppiumServer>
+
+
+    </Environment>

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Web Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">50,681</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Web Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">SanityTests.grafanaWeb</td><td><a href="#m0">test01_login</a></td><td rowspan="1">1606692555021</td><td rowspan="1">7793</td></tr><tr class="failedeven"><td><a href="#m1">test05_VerifyAvatar</a></td><td rowspan="1">1606692595483</td><td rowspan="1">794</td></tr><tr><th colspan="4">Web Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SanityTests.grafanaWeb</td><td><a href="#m2">test02_VerifyDefaultUsers</a></td><td rowspan="1">1606692592087</td><td rowspan="1">559</td></tr><tr class="passedeven"><td><a href="#m3">test03_AddAndVerifiedUser</a></td><td rowspan="1">1606692592875</td><td rowspan="1">1200</td></tr><tr class="passedeven"><td><a href="#m4">test04_DeleteAndVerifiedUser</a></td><td rowspan="1">1606692594309</td><td rowspan="1">963</td></tr></tbody>
+</table>
+<h2>Web Test</h2><h3 id="m0">SanityTests.grafanaWeb#test01_login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (eaba9e536a0e8c251d1ba72ac68a255c)] -&gt; css selector: a[class=&apos;css-1d9e5zy-button&apos;]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FTG8IO1&apos;, ip: &apos;192.168.1.30&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\SHALOM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54212}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: eaba9e536a0e8c251d1ba72ac68a255c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Extensions.UIActions.click(UIActions.java:14)
+	at WorkFlows.webFlows.login(webFlows.java:16)
+	at SanityTests.grafanaWeb.test01_login(grafanaWeb.java:18)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SanityTests.grafanaWeb#test05_VerifyAvatar</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at ru.yandex.qatools.ashot.coordinates.Coords.ofImage(Coords.java:52)
+	at ru.yandex.qatools.ashot.Screenshot.&lt;init&gt;(Screenshot.java:49)
+	at ru.yandex.qatools.ashot.comparison.ImageDiffer.makeDiff(ImageDiffer.java:96)
+	at Extensions.Verifications.visualElement(Verifications.java:53)
+	at SanityTests.grafanaWeb.test05_VerifyAvatar(grafanaWeb.java:62)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SanityTests.grafanaWeb#test02_VerifyDefaultUsers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">SanityTests.grafanaWeb#test03_AddAndVerifiedUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SanityTests.grafanaWeb#test04_DeleteAndVerifiedUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

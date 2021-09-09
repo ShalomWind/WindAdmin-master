@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 51.809 s <<< FAILURE! - in TestSuite
+test01_login(SanityTests.grafanaWeb)  Time elapsed: 36.04 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (eaba9e536a0e8c251d1ba72ac68a255c)] -> css selector: a[class='css-1d9e5zy-button']] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FTG8IO1', ip: '192.168.1.30', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\SHALOM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54212}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: eaba9e536a0e8c251d1ba72ac68a255c
+	at SanityTests.grafanaWeb.test01_login(grafanaWeb.java:18)
+
+test05_VerifyAvatar(SanityTests.grafanaWeb)  Time elapsed: 1.145 s  <<< FAILURE!
+java.lang.NullPointerException
+	at SanityTests.grafanaWeb.test05_VerifyAvatar(grafanaWeb.java:62)
+

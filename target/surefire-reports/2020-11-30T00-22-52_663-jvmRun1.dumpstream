@@ -1,0 +1,85 @@
+# Created at 2020-11-30T00:23:07.896
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-11-30T00:23:11.068
+Unexpected IOException: 8,1,SanityTests.grafanaWeb,StartSession(SanityTests.grafanaWeb),null,session not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A,null,session not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A,grafanaWeb>CommonOps.StartSession:129->CommonOps.initBrowser:52->CommonOps.initChromeDriver:70 \00BB SessionNotCreated,org.openqa.selenium.SessionNotCreatedException: \000Asession not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A\000A
+
+
+# Created at 2020-11-30T00:23:11.076
+Unexpected IOException with stream: -------------- Skipping  Test Case: test01_login -------------
+
+
+# Created at 2020-11-30T00:23:11.077
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,test01_login(SanityTests.grafanaWeb),null,session not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A,null
+
+
+# Created at 2020-11-30T00:23:11.082
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,AfterMethod(SanityTests.grafanaWeb),null,null,null
+
+
+# Created at 2020-11-30T00:23:11.083
+Unexpected IOException with stream: -------------- Skipping  Test Case: test02_VerifyDefaultUsers -------------
+
+
+# Created at 2020-11-30T00:23:11.083
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,test02_VerifyDefaultUsers(SanityTests.grafanaWeb),null,session not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A,null
+
+
+# Created at 2020-11-30T00:23:11.086
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,AfterMethod(SanityTests.grafanaWeb),null,null,null
+
+
+# Created at 2020-11-30T00:23:11.086
+Unexpected IOException with stream: -------------- Skipping  Test Case: test03_AddAndVerifiedUser -------------
+
+
+# Created at 2020-11-30T00:23:11.087
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,test03_AddAndVerifiedUser(SanityTests.grafanaWeb),null,session not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A,null
+
+
+# Created at 2020-11-30T00:23:11.089
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,AfterMethod(SanityTests.grafanaWeb),null,null,null
+
+
+# Created at 2020-11-30T00:23:11.089
+Unexpected IOException with stream: -------------- Skipping  Test Case: test04_DeleteAndVerifiedUser -------------
+
+
+# Created at 2020-11-30T00:23:11.090
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,test04_DeleteAndVerifiedUser(SanityTests.grafanaWeb),null,session not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A,null
+
+
+# Created at 2020-11-30T00:23:11.092
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,AfterMethod(SanityTests.grafanaWeb),null,null,null
+
+
+# Created at 2020-11-30T00:23:11.093
+Unexpected IOException with stream: -------------- Skipping  Test Case: test05_VerifyAvatar -------------
+
+
+# Created at 2020-11-30T00:23:11.093
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,test05_VerifyAvatar(SanityTests.grafanaWeb),null,session not created\000Afrom chrome not reachable\000A  (Session info: chrome=87.0.4280.66)\000ABuild info: version: '3.141.59'\002C revision: 'e82be7d358'\002C time: '2018-11-14T08:17:03'\000ASystem info: host: 'DESKTOP-FTG8IO1'\002C ip: '192.168.1.30'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_211'\000ADriver info: driver.version: ChromeDriver\000Aremote stacktrace: Backtrace:\000A\0009Ordinal0 [0x00D6ECE3+3337443]\000A\0009Ordinal0 [0x00C4F041+2158657]\000A\0009Ordinal0 [0x00AD6E50+618064]\000A\0009Ordinal0 [0x00ACD114+577812]\000A\0009Ordinal0 [0x00ACD7DB+579547]\000A\0009Ordinal0 [0x00ACEA45+584261]\000A\0009Ordinal0 [0x00AC9A71+563825]\000A\0009Ordinal0 [0x00AD7FD0+622544]\000A\0009Ordinal0 [0x00A76B2D+224045]\000A\0009Ordinal0 [0x00A75BFC+220156]\000A\0009Ordinal0 [0x00A7181B+202779]\000A\0009Ordinal0 [0x00A53D74+81268]\000A\0009Ordinal0 [0x00A54D6E+85358]\000A\0009Ordinal0 [0x00A54CF9+85241]\000A\0009Ordinal0 [0x00C66F2C+2256684]\000A\0009GetHandleVerifier [0x00EF2FAC+1478332]\000A\0009GetHandleVerifier [0x00EF2AFD+1477133]\000A\0009GetHandleVerifier [0x00EFAAD8+1509864]\000A\0009GetHandleVerifier [0x00EF369E+1480110]\000A\0009Ordinal0 [0x00C5D6BD+2217661]\000A\0009Ordinal0 [0x00C689AB+2263467]\000A\0009Ordinal0 [0x00C68AEF+2263791]\000A\0009Ordinal0 [0x00C7D363+2347875]\000A\0009BaseThreadInitThunk [0x75C06359+25]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8944+228]\000A\0009RtlGetAppContainerNamedObjectPath [0x771B8914+180]\000A,null
+
+
+# Created at 2020-11-30T00:23:11.096
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,AfterMethod(SanityTests.grafanaWeb),null,null,null
+
+
+# Created at 2020-11-30T00:23:11.096
+Unexpected IOException: 9,1,SanityTests.grafanaWeb,EndSession(SanityTests.grafanaWeb),null,null,null
+
+
+# Created at 2020-11-30T00:23:11.097
+Unexpected IOException with stream: -------------- Starting  Execution -------------
+
+
+# Created at 2020-11-30T00:23:11.195
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

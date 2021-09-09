@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: SanityTests.GafanaWebDB
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.275 s - in SanityTests.GafanaWebDB
